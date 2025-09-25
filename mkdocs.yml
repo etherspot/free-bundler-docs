@@ -29,8 +29,10 @@ theme:
         name: Switch to light mode
 
 nav:
-  - Getting Started:
-    - Quick Start: getting-started/quick-start.md
+  - Home:
+    - Quick Start: index.md
+  # - Getting Started:
+  #   - Quick Start: getting-started/quick-start.md
   - UserOps Guide:
     - Send UserOp: userops/basic.md
     - Sponsored UserOp: userops/sponsor.md
