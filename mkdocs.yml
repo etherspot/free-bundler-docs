@@ -1,11 +1,76 @@
-site_name: Project Docs
+site_name: UserOps Developer Guide
+site_description: Complete guide for developers working with EntryPoint v0.8 and UserOperations
+site_author: Developer Documentation
+site_url: https://entrypoint-v8-docs.com
+
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
 nav:
-  - Home: index.md
-  - Guide: guide.md
-  - FAQ: faq.md
+  - Home:
+    - Quick Start: index.md
+  # - Getting Started:
+  #   - Quick Start: getting-started/quick-start.md
+  - UserOps Guide:
+    - Send UserOp: userops/basic.md
+    - Sponsored UserOp: userops/sponsor.md
+    # - Constructing UserOps: userops/constructing.md
+    # - Submitting UserOps: userops/submitting.md
+    # - Monitoring UserOps: userops/monitoring.md
+  # - EntryPoint v0.8:
+  #   - Overview: entrypoint/overview.md
+  #   - API Reference: entrypoint/api-reference.md
+  #   - Security Considerations: entrypoint/security.md
+  # - Examples & Tutorials:
+  #   - Basic UserOp: examples/basic-userop.md
+  #   - Advanced Patterns: examples/advanced-patterns.md
+  #   - Integration Examples: examples/integration.md
+  # - Troubleshooting:
+  #   - Common Issues: troubleshooting/common-issues.md
+  #   - Error Codes: troubleshooting/error-codes.md
+  #   - FAQ: faq.md
+
 markdown_extensions:
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
   - toc:
       permalink: true
+  - tables
+  - codehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
