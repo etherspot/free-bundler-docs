@@ -47,6 +47,6 @@ const commonClient = createFreeBundler({chain})
                       .extend(walletActions);
 ```
 
-1. **[Constructing UserOps](../userops/basic.md)** - Create and Send UserOp
+1. **[Constructing UserOps](../userops/basic)** - Create and Send UserOp
 
 ---
