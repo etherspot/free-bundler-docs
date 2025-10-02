@@ -81,3 +81,10 @@ Refer [here](https://viem.sh/account-abstraction/accounts/smart#smart-accounts) 
                                     .extend(publicActions)
                                     .extend(walletActions)
     ```
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/etherspot/free-bundler?file=examples%2Findex.ts)
+
+After opening StackBlitz, run:
+```bash
+npx tsx examples/index.ts --private-key 0x...
+```
+<small><em>For more run options, see the <a href="https://github.com/etherspot/free-bundler/blob/master/examples/USAGE.md">GitHub examples usage</a>.</em></small>

@@ -107,3 +107,13 @@ Refer [here](https://viem.sh/account-abstraction/clients/paymaster) for more opt
     // use the corresponding paymaster's docs to understand what has to used for context.
     export const paymasterContext = { policyId: "" } // add policy id here 
     ```
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/etherspot/free-bundler?file=examples%2Findex.ts)
+
+After opening StackBlitz, run:
+```bash
+npx tsx examples/index.ts \
+--private-key 0x... \
+--paymaster-url 'https://....' \
+--paymaster-context ''
+```
+<small><em>For more run options, see the <a href="https://github.com/etherspot/free-bundler/blob/master/examples/USAGE.md">GitHub examples usage</a>.</em></small>
